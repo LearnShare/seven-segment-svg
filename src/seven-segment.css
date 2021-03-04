@@ -1,0 +1,60 @@
+svg {
+  --color-off: #F5F5F5;
+  --color-on: #88F;
+
+  width: 44px;
+  height: 80px;
+}
+
+svg[data-digits] path {
+  fill: var(--color-off);
+}
+
+svg[data-dot] circle,
+svg[data-colon] circle {
+  fill: var(--color-on);
+}
+
+svg[data-digits="0"] path {
+  fill: var(--color-on);
+}
+svg[data-digits="0"] path:nth-child(7) {
+  fill: var(--color-off);
+}
+
+svg[data-digits="1"] path:nth-child(2),
+svg[data-digits="1"] path:nth-child(3) {
+  fill: var(--color-on);
+}
+
+svg[data-digits="2"] path {
+  fill: var(--color-on);
+}
+svg[data-digits="2"] path:nth-child(3),
+svg[data-digits="2"] path:nth-child(6) {
+  fill: var(--color-off);
+}
+
+svg[data-digits="A"] path {
+  fill: var(--color-on);
+}
+svg[data-digits="A"] path:nth-child(4) {
+  fill: var(--color-off);
+}
+
+svg[data-digits="b"] path {
+  fill: var(--color-on);
+}
+svg[data-digits="b"] path:nth-child(1),
+svg[data-digits="b"] path:nth-child(2) {
+  fill: var(--color-off);
+}
+
+svg[data-digits="C"] path {
+  fill: var(--color-on);
+}
+svg[data-digits="C"] path:nth-child(2),
+svg[data-digits="C"] path:nth-child(3),
+svg[data-digits="C"] path:nth-child(7) {
+  fill: var(--color-off);
+}
